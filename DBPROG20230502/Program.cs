@@ -54,7 +54,7 @@ internal class Program
                     
                 Console.WriteLine($"\nFag: {item.CourseName}");
                 Console.WriteLine($"Elever i: {item.CourseName}");
-                foreach (var item2 in result)
+                foreach (var item2 in students)
                 {
                     Console.WriteLine($"{item2.FirstName} {item2.LastName}");
                 }
