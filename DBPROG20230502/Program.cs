@@ -44,7 +44,7 @@ internal class Program
             return;
         }
 
-        Console.WriteLine($" Du har søgt på: {teacherFirstName} {teacherLastName}\n");
+        Console.WriteLine($"Du har søgt på: {teacherFirstName} {teacherLastName}");
 
         foreach (var item in result)
         {
@@ -52,9 +52,9 @@ internal class Program
             {
                 if (item.Teacher != null)
                     
-                Console.WriteLine($"Fag: {item.CourseName}");
+                Console.WriteLine($"\nFag: {item.CourseName}");
                 Console.WriteLine($"Elever i: {item.CourseName}");
-                foreach (var item2 in students)
+                foreach (var item2 in result)
                 {
                     Console.WriteLine($"{item2.FirstName} {item2.LastName}");
                 }
